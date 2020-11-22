@@ -1,7 +1,7 @@
 const sumAll = function(a, b) {
 let sum = 0;
-if ((typeof a == "number" || typeof b != "number") || (a < 0 || b< 0))  {
-sum = "ERROR";
+if ((typeof a != "number" || typeof b != "number") || (a < 0 || b < 0))  {
+return  "ERROR";
 } else if (a < b) {
 for (let num = a; num <= b; num++) {
 sum += num;
